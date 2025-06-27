@@ -5,8 +5,6 @@ Um exemplo simples de aplicação CLI para realizar operações de **CRUD** (Cre
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png" alt="golang_imagem" width="200">
 </p>
 
-<<<<<<< HEAD
-=======
 ---
 
 ## 🧱 Arquitetura de Camadas
@@ -21,7 +19,6 @@ O projeto segue a **Arquitetura em Camadas (Layered Architecture)**, separando r
 - **`utils/`**: utilitários para entrada de dados e interações com o usuário via terminal (CLI).
 
 
->>>>>>> 96f5669579095d79ae9a4e9e94d46af94d40d23b
 
 ---
 
