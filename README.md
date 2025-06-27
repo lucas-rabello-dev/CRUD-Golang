@@ -18,8 +18,6 @@ O projeto segue a **Arquitetura em Camadas (Layered Architecture)**, separando r
 - **`service/`**: lógica de negócio. Define regras e construção dos dados que serão enviados ao repositório.
 - **`utils/`**: utilitários para entrada de dados e interações com o usuário via terminal (CLI).
 
-
-
 ---
 
 ## Funcionalidades
