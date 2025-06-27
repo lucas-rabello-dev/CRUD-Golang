@@ -5,6 +5,23 @@ Um exemplo simples de aplicação CLI para realizar operações de **CRUD** (Cre
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png" alt="golang_imagem" width="200">
 </p>
 
+<<<<<<< HEAD
+=======
+---
+
+## 🧱 Arquitetura de Camadas
+
+O projeto segue a **Arquitetura em Camadas (Layered Architecture)**, separando responsabilidades em diferentes pacotes para garantir organização, manutenibilidade e escalabilidade:
+
+- **`main.go`**: ponto de entrada da aplicação, responsável por inicializar o banco e orquestrar o menu principal.
+- **`db/`**: camada de infraestrutura. Responsável por abrir conexões e criar as tabelas no banco de dados SQLite.
+- **`models/`**: contém as structs (como `User`) que representam os dados da aplicação.
+- **`repository/`**: camada de persistência. Contém as funções que executam consultas SQL no banco de dados.
+- **`service/`**: lógica de negócio. Define regras e construção dos dados que serão enviados ao repositório.
+- **`utils/`**: utilitários para entrada de dados e interações com o usuário via terminal (CLI).
+
+
+>>>>>>> 96f5669579095d79ae9a4e9e94d46af94d40d23b
 
 ---
 
