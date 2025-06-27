@@ -1,0 +1,37 @@
+package utils
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+	"strconv"
+	"log"
+)
+
+func ReadInputStr(prompt string) string {
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print(prompt)
+	text, _ := reader.ReadString('\n')
+	return strings.TrimSpace(text)
+}
+
+func ReadInputInt(prompt string) int {
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print(prompt)
+	numStr, _ := reader.ReadString('\n')
+	numStr = strings.TrimSpace(numStr)
+	num, err := strconv.Atoi(numStr)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return num
+}
+// Printf with One Format
+func ReadInputStr_oneF(format string) string {
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Printf("Deletar o Usuário: %s (s) (n)? \n", format)
+	formatWithFunction, _ := reader.ReadString('\n')
+	formatWithFunction = strings.TrimSpace(formatWithFunction)
+	return formatWithFunction
+}
