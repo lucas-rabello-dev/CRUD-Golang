@@ -59,8 +59,8 @@ O projeto segue a **Arquitetura em Camadas (Layered Architecture)**, separando r
   ```bash
   go get github.com/google/uuid
   ```
-
-
+## 💡​Dica
+Ao inserir o nome do usuário para consulta, atualização ou remoção, utilize exatamente o mesmo nome salvo no banco de dados. Diferenças de maiúsculas, acentuação ou espaços podem impedir que o usuário seja localizado.
 ## Redes sociais:
 <hr>
 
