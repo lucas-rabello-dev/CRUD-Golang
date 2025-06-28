@@ -28,9 +28,9 @@ func ReadInputInt(prompt string) int {
 	return num
 }
 // Printf with One Format
-func ReadInputStr_oneF(format string) string {
+func ReadInputStr_oneF(prompt, format string) string {
 	reader := bufio.NewReader(os.Stdin)
-	fmt.Printf("Deletar o Usuário: %s (s) (n)? \n", format)
+	fmt.Printf(prompt, format)
 	formatWithFunction, _ := reader.ReadString('\n')
 	formatWithFunction = strings.TrimSpace(formatWithFunction)
 	return formatWithFunction

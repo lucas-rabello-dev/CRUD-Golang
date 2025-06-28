@@ -72,6 +72,7 @@ func main() {
 			if err != nil {
 				log.Fatal(err)
 			}
+
 			defer rows.Close()
 
 			var foundID, foundName string
@@ -86,6 +87,8 @@ func main() {
 					foundID = id
 					foundName = name
 					userFound = true
+					// Fechar o processo manualmente para evitar o "database is locked"
+					rows.Close()
 					break
 				}
 			}
@@ -150,6 +153,7 @@ func main() {
 				}
 				if nameToDelete == name {
 					userFound = true
+					rows.Close()
 					break
 				}
 			}
@@ -159,13 +163,14 @@ func main() {
 			}
 
 			fmt.Println("Usuário encontrado!")
-			var deleteQuestion string = utils.ReadInputStr_oneF(nameToDelete)
+			var deleteQuestion string = utils.ReadInputStr_oneF("Deletar o Usuário %s (s) (n): \n", nameToDelete)
 
 			if deleteQuestion == "s" {
 				err := repository.DeleteUser(database, nameToDelete)
 				if err != nil {
 					log.Fatal(err)
 				}
+				fmt.Println("Usuário Deletado com sucesso!")
 			} else if deleteQuestion == "n" {
 				fmt.Println("O usuário não foi deletado!")
 			} else {
