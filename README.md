@@ -64,8 +64,8 @@ O projeto segue a **Arquitetura em Camadas (Layered Architecture)**, separando r
 ## Redes sociais:
 <hr>
 
-[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/lcs.carvalho_/?next=%2F) [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-rabello-42b23a339/)
-
+[![My Skills](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/lucas-rabello-42b23a339/) 
+[![My Skills](https://skillicons.dev/icons?i=instagram)](https://www.instagram.com/lcs.carvalho_/?next=%2F) 
 ## LeetCode:
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-Lucas--Rabello--Dev-orange?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/lucas-rabello-dev/)
